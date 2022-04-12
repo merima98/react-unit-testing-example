@@ -5,12 +5,7 @@ import TitleHeader from "./components/TitleHeader";
 function App() {
   return (
     <div>
-      <Jubotron>
-        <TitleHeader
-          className="text-center"
-          title="React Form - unit testing"
-        />
-      </Jubotron>
+      <Jubotron />
     </div>
   );
 }

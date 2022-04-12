@@ -1,5 +1,5 @@
 const TitleHeader = (props) => {
-  return <div className={props.className}>{props.title}</div>;
+  return <div>React unit testing - React testing library.</div>;
 };
 
 export default TitleHeader;
