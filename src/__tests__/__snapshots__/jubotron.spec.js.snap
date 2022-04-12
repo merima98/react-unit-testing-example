@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should test Jubotron component should render component 1`] = `
+<div
+  className="jubotron"
+/>
+`;
