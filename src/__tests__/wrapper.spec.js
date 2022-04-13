@@ -1,6 +1,6 @@
 import React from "react";
 import { getByRole, render, screen } from "@testing-library/react";
-import Wrapper from "../components/Wrapper.tsx";
+import Wrapper from "../components/Wrapper.jsx";
 
 describe("Should test Wrapper component", function () {
   it("Should render Wrapper component.", function () {
@@ -8,7 +8,6 @@ describe("Should test Wrapper component", function () {
   });
   it("Should have child componet.", function () {
     const { getByRole } = render(<Wrapper />);
-    console.log("I am in wrapper component, ", getByRole);
     expect(screen.getByText("Wrapper"));
   });
 });

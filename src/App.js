@@ -1,16 +1,14 @@
 import "./App.css";
-import Wrapper from "./components/Wrapper.tsx";
 import Jubotron from "./components/Jubotron";
-import Row from "./components/Row";
-import TitleHeader from "./components/TitleHeader";
-import Button from "./components/Button";
+import Wrapper from "./components/Wrapper";
+import Alert from "./components/Alert";
 
 function App() {
   return (
     <div>
       <Jubotron />
       <Wrapper />
-      <Button />
+      <Alert />
     </div>
   );
 }
