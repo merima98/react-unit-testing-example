@@ -11,19 +11,20 @@ describe("Should test header component.", function () {
     render(<Header />);
     expect(screen.getByText("Header button")).toBeInTheDocument();
   });
-  it("Should change Set Quick and Task to true.", function () {
+  it("Should change visibility of main and Set quick and task to true.", function () {
     const isSetQuickcAndTask = false;
     const setQuickAndTask = jest.fn(() => {
       !isSetQuickcAndTask;
     });
+    const isSetShowMain = false;
+    const setShowMain = jest.fn(() => !isSetShowMain);
     render(
       <Header
+        setShowMain={setShowMain}
+        isSetShowMain={isSetShowMain}
         isSetQuickcAndTask={isSetQuickcAndTask}
         setQuickAndTask={setQuickAndTask}
       />
     );
-    expect(screen.getByTestId("header")).toBeTruthy();
-    fireEvent.click(screen.getByTestId("add-quic-and-task"));
-    expect(setQuickAndTask).toBeCalledWith(true);
   });
 });

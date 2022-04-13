@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-const Header = ({ isSetQuickcAndTask, setQuickAndTask }) => {
+const Header = ({
+  isSetQuickcAndTask,
+  setQuickAndTask,
+  isSetShowMain,
+  setShowMain,
+}) => {
   return (
     <header className="header" data-testid="header">
       <div>
@@ -12,6 +17,7 @@ const Header = ({ isSetQuickcAndTask, setQuickAndTask }) => {
                 data-testid="add-quic-and-task"
                 onClick={() => {
                   setQuickAndTask(!isSetQuickcAndTask);
+                  setShowMain(!isSetShowMain);
                 }}
               >
                 Header button
