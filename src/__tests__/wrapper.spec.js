@@ -1,13 +1,13 @@
 import React from "react";
-import { getByRole, render, screen } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Wrapper from "../components/Wrapper.jsx";
 
 describe("Should test Wrapper component", function () {
-  it("Should render Wrapper component.", function () {
+  beforeEach(() => {
+    //Before each test, we will render Wrapper component.
     render(<Wrapper />);
   });
   it("Should have child componet.", function () {
-    const { getByRole } = render(<Wrapper />);
     expect(screen.getByText("Wrapper"));
   });
 });
