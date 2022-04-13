@@ -17,6 +17,6 @@
 
 ### `yarn test`
 
-### `License`
+### License
 
 [MIT](./LICENSE)
